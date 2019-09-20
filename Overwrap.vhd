@@ -6,6 +6,7 @@ ENTITY overwrap IS
 PORT(
 ---------FPGA Connections-------------
 FPGA_CLK1_50: IN STD_LOGIC;
+LED: OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 ---------HPS Connections---------------
 HPS_CONV_USB_N:INOUT STD_LOGIC;
 HPS_DDR3_ADDR:OUT STD_LOGIC_VECTOR(14 downto 0);
