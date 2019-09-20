@@ -52,12 +52,13 @@ END overwrap;
 ARCHITECTURE MAIN OF Overwrap IS
 --El Componente WRAP0 es nuestro componente personalizado.
 --Si se quiere añadir más puertos, como por ejemplo una señal de reloj, hay que modificar esta instancia del componente.
---Lo mismo aplica para cambiar el ancho o el tipo de los puertos.
 --Asimismo, hay que hacer las modificaciones correspondientes en archivo WRAP0.vhd
+--Lo mismo aplica para cambiar el ancho o el tipo de los puertos.
+
 component WRAP0 is
 	port ( 
-	---fromHPS: in std_logic_vector(15 downto 0);
-	---toHPS: out std_logic_vector(15 downto 0)
+	fromHPS: in std_logic_vector(15 downto 0);
+	toHPS: out std_logic_vector(15 downto 0)
 	);
 end component;
 
