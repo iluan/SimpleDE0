@@ -56,8 +56,8 @@ ARCHITECTURE MAIN OF Overwrap IS
 --Asimismo, hay que hacer las modificaciones correspondientes en archivo WRAP0.vhd
 component WRAP0 is
 	port ( 
-	fromHPS: in std_logic_vector(15 downto 0);
-	toHPS: out std_logic_vector(15 downto 0)
+	---fromHPS: in std_logic_vector(15 downto 0);
+	---toHPS: out std_logic_vector(15 downto 0)
 	);
 end component;
 
@@ -129,6 +129,7 @@ component simple_soc is
 SIGNAL HPS_H2F_RST:STD_LOGIC;
 SIGNAL F2H:STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL H2F:STD_LOGIC_VECTOR(15 DOWNTO 0);
+--Las dos señales en las lineas anteriores están por defecto para conectar el FPGA con el HPS en una interfaz de 16-bits
 --Inserte aquí las señales que conectan a su componente.
 BEGIN
 --La siguiente instancia de WRAP 0 es un ejemplo.
